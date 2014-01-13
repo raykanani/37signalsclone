@@ -177,6 +177,11 @@ nav {
 	width: 95%;
 }
 
+.headline span{
+	text-decoration: underline;
+	color: #3A70A6;
+}
+
 /* Product Highlights */
 
 .product{
