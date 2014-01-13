@@ -13,19 +13,22 @@ $(function(){
 		$('.headline').replaceWith('<h2 class="headline"><span>Highrise</span> remembers the important things about people you’d normally forget.</h2>');
 		$('.subline').replaceWith('<h5 class="subline-replace">Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.</h5>');
 		$('.highrise .arrow-right').css('display', 'inline');
-
+		//Compress headline
+		$('.headline').css('width', '780px')
 	});
 	$('.campfire').mouseenter(function(){
 		//Campfire product content enter and replace
 		$('.headline').replaceWith('<h2 class="headline">From near or far, <span>Campfire</span> helps teams work together over the web in real-time.</h2>');
 		$('.subline').replaceWith('<h5 class="subline-replace">Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.</h5>');
 		$('.campfire .arrow-left').css('display', 'inline');
-
 	});
 	$('.basecamp, .highrise, .campfire').mouseleave(function(){
+		// Revert back original content
 		$('.headline').replaceWith(orginalHeadline);
 		$('.subline-replace').replaceWith(originalSubline);
 		$('.arrow-left, .arrow-right').css('display', 'none');
+		// Revert back original headline width
+		$('.headline').css('width', '100%')
 	});
 });
 
