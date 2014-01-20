@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>37 Signals</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<nav>
@@ -19,63 +19,86 @@
 		</ul>
 	</nav>
 	<div class="main-content">
-		<div class="logo"><img src="logo-37s-large.png" alt="37 Signals Logo"></div>
-		<h1 class="headline">
-			Making collaboration productive and enjoyable for people every day
-		</h1>
-		<h4 class="subline">
-			Frustration-free web-based apps for collaboration, sharing information, and making decisions.
-		</h4>
-		<!-- Hover Content -->		
-		<h2 data-product="basecamp" class="headline invisible">
-			<span>Basecamp</span> is the project management tool you wish you had on your last project.
-		</h2>
-		<h5 data-product="basecamp" class="subline-replace invisible">
-			Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.
-		</h5>
-		<!--
-		<h2 data-product="highrise" class="headline invisible">
-			<span>Highrise</span> remembers the important things about people you’d normally forget.
-		</h2>
-		<h5 data-product="highrise" class="subline-replace invisible">
-			Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.
-		</h5>
-		<h2 data-product="campfire" class="headline invisible">
-			From near or far, <span>Campfire</span> helps teams work together over the web in real-time.
-		</h2>
-		<h5 data-product="campfire" class="subline-replace invisible">
-			Frustration-free web-based apps for collaboration, sharing information, and making decisions.
-		</h5>
-		-->
+		<div class="logo">
+			<img src="./img/logo-37s-large.png" alt="37 Signals Logo">
+		</div>
+		<div id="default-headline">
+			<h1 class="headline">
+				Making collaboration productive and enjoyable for people every day
+			</h1>
+			<h4 class="subline">
+				Frustration-free web-based apps for collaboration, sharing information, and making decisions.
+			</h4>
+		</div>
+
+		<!-- Hover Content -->
+		<div id="basecamp" class="invisible">
+			<h2 class="headline ">
+				<span>Basecamp</span> is the project management tool you wish you had on your last project.
+			</h2>
+			<h5 class="subline-replace">
+				Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.
+			</h5>
+		</div>
+		<div id="highrise" class="invisible">
+			<h2 class="headline ">
+				<span>Highrise</span> remembers the important things about people you’d normally forget.
+			</h2>
+			<h5 class="subline-replace">
+				Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.
+			</h5>
+		</div>
+		<div id="campfire" class="invisible">
+			<h2 class="headline ">
+				From near or far, <span>Campfire</span> helps teams work together over the web in real-time.
+			</h2>
+			<h5 class="subline-replace">
+				Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. It’s game changing. We couldn’t run our own business without Campfire.
+			</h5>
+		</div>
 		<!-- End of Hover Content -->
 		<ul class="highlight">
-			<li class="product basecamp">
-				<img class="arrow arrow-left invisible" src="arrow-left.png" alt="red arrow">
-				<img src="logo-bc.png" alt="Basecamp logo">
-				<h4 class="product-name"><span class="underline">Basecamp</span><sup>&reg;</sup></h4>
-				<p class="product-pitch"><em>Manage Projects</em></p>
+			<li data-product-id="basecamp" class="product">
+				<img class="arrow arrow-left invisible" src="./img/arrow-left.png" alt="red arrow">
+				<img src="./img/logo-bc.png" alt="Basecamp logo">
+				<h4 class="product-name">
+					<span class="underline">Basecamp</span><sup>&reg;</sup>
+				</h4>
+				<p class="product-pitch">
+					<em>Manage Projects</em>
+				</p>
 				<p>Used by millions for project management.</p>
 			</li>
-			<li class="product highrise">
-				<img class="arrow arrow-left invisible" src="arrow-left.png" alt="red arrow">
-				<img src="logo-hr.png" alt="Highrise logo">
-				<h4 class="product-name"><span class="underline">Highrise</span><sup>&reg;</sup></h4>
-				<p class="product-pitch"><em>Manage Contacts</em></p>
+			<li data-product-id="highrise" class="product">
+				<img class="arrow arrow-left invisible" src="./img/arrow-left.png" alt="red arrow">
+				<img src="./img/logo-hr.png" alt="Highrise logo">
+				<h4 class="product-name">
+					<span class="underline">Highrise</span><sup>&reg;</sup>
+				</h4>
+				<p class="product-pitch">
+					<em>Manage Contacts</em>
+				</p>
 				<p>Know the people you do business with.</p>	
 			</li>
-			<li class="product campfire">
-				<img class="arrow arrow-right invisible" src="arrow-right.png" alt="red arrow">
-				<img src="logo-cf.png" alt="Campfire logo">
-				<h4 class="product-name"><span class="underline">Campfire</span><sup>&trade;</sup></h4>
-				<p class="product-pitch"><em>Work in Real-Time</em></p>
+			<li data-product-id="campfire" class="product">
+				<img class="arrow arrow-right invisible" src="./img/arrow-right.png" alt="red arrow">
+				<img src="./img/logo-cf.png" alt="Campfire logo">
+				<h4 class="product-name">
+					<span class="underline">Campfire</span><sup>&trade;</sup>
+				</h4>
+				<p class="product-pitch">
+					<em>Work in Real-Time</em>
+				</p>
 				<p>group chat rooms for your business.</p>
 			</li>
 		</ul>
-		<div class="star-divider"><img src="img-hr.png" alt="Star Divider"></div>
+		<div class="star-divider">
+			<img src="./img/img-hr.png" alt="Star Divider">
+		</div>
 	</div>
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="application.js"></script>	
+	<script src="./script/application.js"></script>	
 </body>
 </html>
