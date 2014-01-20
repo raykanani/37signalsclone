@@ -4,77 +4,78 @@
 	<meta charset="UTF-8">
 	<title>37 Signals</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script language="javascript" type="text/javascript" src="application.js"></script>
 </head>
 <body>
-	<!-- Navigation -->
 	<nav>
-		<!-- Javascript Date Specific Welcome Message -->
 		<div class="js-date">
 			Happy Wednesday.
 		</div>
-		<!-- Navigation Links -->
 		<ul class="navigation">
-			<li class="links">Company blog</li>
-			<li class="links">Our story</li>
-			<li class="links">Follow us on Twitter</li>
-			<li class="links">System status</li>
-		<!-- Sign In Link -->
-			<li class="links sign-in">Sign in</li>
+			<li>Company blog</li>
+			<li>Our story</li>
+			<li>Follow us on Twitter</li>
+			<li>System status</li>
+			<li class="sign-in">Sign in</li>
 		</ul>
 	</nav>
-	<!-- Main Content -->
 	<div class="main-content">
-		<!-- Logo -->
 		<div class="logo"><img src="logo-37s-large.png" alt="37 Signals Logo"></div>
-		<!-- Headline -->
 		<h1 class="headline">
 			Making collaboration productive and enjoyable for people every day
 		</h1>
-		<!-- Subline -->
-			<h4 class="subline">Frustration-free web-based apps for collaboration, sharing information, and making decisions.</h4>
-		<!-- Highlight Boxes -->
+		<h4 class="subline">
+			Frustration-free web-based apps for collaboration, sharing information, and making decisions.
+		</h4>
+		<!-- Hover Content -->		
+		<h2 data-product="basecamp" class="headline invisible">
+			<span>Basecamp</span> is the project management tool you wish you had on your last project.
+		</h2>
+		<h5 data-product="basecamp" class="subline-replace invisible">
+			Are you still managing projects with email? Are you still using Excel for your to-do lists? It’s time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.
+		</h5>
+		<!--
+		<h2 data-product="highrise" class="headline invisible">
+			<span>Highrise</span> remembers the important things about people you’d normally forget.
+		</h2>
+		<h5 data-product="highrise" class="subline-replace invisible">
+			Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise.
+		</h5>
+		<h2 data-product="campfire" class="headline invisible">
+			From near or far, <span>Campfire</span> helps teams work together over the web in real-time.
+		</h2>
+		<h5 data-product="campfire" class="subline-replace invisible">
+			Frustration-free web-based apps for collaboration, sharing information, and making decisions.
+		</h5>
+		-->
+		<!-- End of Hover Content -->
 		<ul class="highlight">
 			<li class="product basecamp">
-				<!-- Red Arrow -->
-				<img class="arrow-right" src="arrow-left.png" alt="red arrow">
-				<!-- Product Image -->
+				<img class="arrow arrow-left invisible" src="arrow-left.png" alt="red arrow">
 				<img src="logo-bc.png" alt="Basecamp logo">
-				<!-- Product Headline -->
 				<h4 class="product-name"><span class="underline">Basecamp</span><sup>&reg;</sup></h4>
-				<!-- Product Subline -->
 				<p class="product-pitch"><em>Manage Projects</em></p>
-				<!-- Product Info -->
 				<p>Used by millions for project management.</p>
 			</li>
 			<li class="product highrise">
-				<!-- Red Arrow -->
-				<img class="arrow-right" src="arrow-left.png" alt="red arrow">
-				<!-- Product Image -->
+				<img class="arrow arrow-left invisible" src="arrow-left.png" alt="red arrow">
 				<img src="logo-hr.png" alt="Highrise logo">
-				<!-- Product Headline -->
 				<h4 class="product-name"><span class="underline">Highrise</span><sup>&reg;</sup></h4>
-				<!-- Product Subline -->
 				<p class="product-pitch"><em>Manage Contacts</em></p>
-				<!-- Product Info -->
 				<p>Know the people you do business with.</p>	
 			</li>
 			<li class="product campfire">
-				<!-- Red Arrow -->
-				<img class="arrow-left" src="arrow-right.png" alt="red arrow">
-				<!-- Product Image -->
+				<img class="arrow arrow-right invisible" src="arrow-right.png" alt="red arrow">
 				<img src="logo-cf.png" alt="Campfire logo">
-				<!-- Product Headline -->
 				<h4 class="product-name"><span class="underline">Campfire</span><sup>&trade;</sup></h4>
-				<!-- Product Subline -->
 				<p class="product-pitch"><em>Work in Real-Time</em></p>
-				<!-- Product Info -->
 				<p>group chat rooms for your business.</p>
 			</li>
 		</ul>
-		<!-- Star Divider -->
-		<div class="star"><img src="img-hr.png" alt="Star Divider"></div>
-	</div>	
+		<div class="star-divider"><img src="img-hr.png" alt="Star Divider"></div>
+	</div>
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="application.js"></script>	
 </body>
 </html>

@@ -107,6 +107,10 @@ sup{
 	text-decoration: underline;
 }
 
+.invisible{
+	display: none;
+}
+
 /* Navigation */
 nav {
 	position: relative;
@@ -129,20 +133,20 @@ nav {
 	color: #369;
 }
 
-.links{
+.navigation li{
 	display: inline-block;
 	margin: 0 10px;
 }
 
-.links:hover{
+.navigation li:hover{
 	color: #18afe0;
 }
 
-.sign-in{
+li .sign-in{
 	color: #18afe0;
 }
 
-.sign-in:hover{
+li .sign-in:hover{
 	color: #369;
 }
 
@@ -194,19 +198,17 @@ nav {
 }
 
 /* Arrow */
-.arrow-right, .arrow-left{
+.arrow{
 	position: absolute;
-	display: none;
-}
-
-.arrow-right{
-	right:-30px;
 	top:-40px;
 }
 
 .arrow-left{
+	right:-30px;
+}
+
+.arrow-right{
 	left: -15px;
-	top:-40px;
 }
 
 .product-name{
@@ -223,7 +225,7 @@ nav {
 }
 
 /* Divider */
-.star{
+.star-divider{
 	margin: 35px 0;
 }
 
