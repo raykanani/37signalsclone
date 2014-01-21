@@ -1,11 +1,9 @@
 $(function(){
 	var $mainContent = $('#default-headline'), // keep the mainContent saved
-		$currentProduct, $arrow, $hoverReplace; // make high level variables to save current selections
+		$currentProduct, $arrow, $hoverReplace; // set high-level variables as undefined
 
 	// function to toggle the visibility of the currently set elements
-	// this function assignment needs to be above the 'hoverIn' because it is used within 'hoverIn'
 	var toggleVisible = function(){
-		// use the toggleClass to add when not hasClass and remove when hasClass
 		$mainContent.toggleClass('invisible');
 		$arrow.toggleClass('invisible');
 		$hoverReplace.toggleClass('invisible');
@@ -13,7 +11,6 @@ $(function(){
 
 	// function to set what has been hovered on, then toggle the visibility
 	var hoverOn = function(){
-		console.log(this);
 		// set the LI that was hovered over
 		$currentProduct = $(this);
 		// set the current arrow
@@ -29,6 +26,5 @@ $(function(){
 		hoverOn, 
 		toggleVisible
 	);
-	// call toggleVisible directly on hoverOff because we already set everything in hoverOn
 });
 
